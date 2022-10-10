@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Автовоз 4</title>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <link rel="stylesheet" href="dist/css/bootstrap.css">
     <script src="js/script.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="jquery_ui/jquery-ui.min.css"/>
     <link rel="stylesheet" href="css/global.css">
-
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <link rel='stylesheet' id='hello-elementor-css'
           href='css/hello-elementor.min.css'
           type='text/css' media='all'/>
@@ -404,7 +407,7 @@
             <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-fe6a2ea"
                  data-id="fe6a2ea" data-element_type="column"
                  data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                <div class="elementor-widget-wrap elementor-element-populated">
+                <div class="elementor-widget-wrap elementor-element-populated form-orders-section">
                     <div class="elementor-element elementor-element-18c77b8 elementor-widget elementor-widget-heading"
                          data-id="18c77b8" data-element_type="widget" data-widget_type="heading.default">
                         <div class="elementor-widget-container">
@@ -415,128 +418,256 @@
                     <div class="tab">
 
                         <ul class="tabs">
-                            <li><a href="#" class="custom-tab">Tab01</a></li>
-                            <li><a href="#" class="custom-tab">Tab02</a></li>
-                            <li><a href="#" class="custom-tab">Tab03</a></li>
-                            <li><a href="#" class="custom-tab">Tab04</a></li>
+                            <li class="current"><a href="#" class="custom-tab">Тип транспорта</a></li>
+                            <li><a href="#" class="custom-tab">Модель и марка</a></li>
+                            <li><a href="#" class="custom-tab">Информация о доставке</a></li>
+                            <li><a href="#" class="custom-tab">Стоимость перевозки</a></li>
                         </ul> <!-- / tabs -->
-
+                        <form action="#" method="post" id="form-order"></form>
                         <div class="tab_content">
-                            <form action="#" method="post" id="form-order"></form>
                             <div class="tabs_item">
                                 <h4>Какое транспортное средство вы хотите перевезти?</h4>
-                                <label for="sedan">
-                                    <input
-                                            type="radio"
-                                            id="sedan"
-                                            name="auto"
-                                            value="Седан"
-                                            required
-                                    />
-                                    <img
-                                            src="images/cars-select/sedan.png"
+                                <div class="select-car" id="tab-1">
+                                    <label for="sedan">
+                                        <input
+                                                type="radio"
+                                                id="sedan"
+                                                name="auto"
+                                                value="Седан"
+                                                required
+                                        />
+                                        <img
+                                                src="images/cars-select/sedan.png"
+                                                alt=""
+                                        />Седан</label
+                                    >
+
+                                    <label for="crossover">
+                                        <input
+                                                type="radio"
+                                                id="crossover"
+                                                name="auto"
+                                                value="Кроссовер"
+                                        /><img
+                                            src="images/cars-select/crossover.png"
                                             alt=""
-                                    />Седан</label
-                                >
+                                    />Кроссовер</label
+                                    >
 
-                                <label for="crossover">
-                                    <input
-                                            type="radio"
-                                            id="crossover"
-                                            name="auto"
-                                            value="Кроссовер"
-                                    /><img
-                                        src="images/cars-select/crossover.png"
-                                        alt=""
-                                />Кроссовер</label
-                                >
-
-                                <label for="hatchback">
-                                    <input
-                                            type="radio"
-                                            id="hatchback"
-                                            name="auto"
-                                            value="Хэтчбэк"
-                                    /><img
-                                        src="images/cars-select/hatchback.png"
-                                        alt=""
-                                />Хэтчбэк</label
-                                >
-
-                                <label for="universal">
-                                    <input
-                                            type="radio"
-                                            id="universal"
-                                            name="auto"
-                                            value="Универсал"
-                                    /><img
-                                        src="images/cars-select/universal.png"
-                                        alt=""
-                                />Универсал</label
-                                >
-
-                                <label for="suv">
-                                    <input
-                                            type="radio"
-                                            id="suv"
-                                            name="auto"
-                                            value="Внедорожник"
-                                    /><img
-                                        src="images/cars-select/suv.png"
-                                        alt=""
-                                />Внедорожник</label
-                                >
-
-                                <label for="load-truck"
-                                ><input
-                                        type="radio"
-                                        id="load-truck"
-                                        name="auto"
-                                        value="Грузовой"
-                                /><img
-                                        src="images/cars-select/load-truck.png"
-                                        alt=""
-                                />Грузовой</label
-                                >
-
-                                <label for="more">
-                                    <input
-                                            type="radio"
-                                            id="more"
-                                            name="auto"
-                                            value="Другой"
-                                    />
-                                    <img
-                                            src="images/cars-select/sportcar.png"
+                                    <label for="hatchback">
+                                        <input
+                                                type="radio"
+                                                id="hatchback"
+                                                name="auto"
+                                                value="Хэтчбэк"
+                                        /><img
+                                            src="images/cars-select/hatchback.png"
                                             alt=""
-                                    />
-                                    Другой</label
-                                >
+                                    />Хэтчбэк</label
+                                    >
 
-                                <span class="edit-btn">Изменить</span>
+                                    <label for="universal">
+                                        <input
+                                                type="radio"
+                                                id="universal"
+                                                name="auto"
+                                                value="Универсал"
+                                        /><img
+                                            src="images/cars-select/universal.png"
+                                            alt=""
+                                    />Универсал</label
+                                    >
+
+                                    <label for="suv">
+                                        <input
+                                                type="radio"
+                                                id="suv"
+                                                name="auto"
+                                                value="Внедорожник"
+                                        /><img
+                                            src="images/cars-select/suv.png"
+                                            alt=""
+                                    />Внедорожник</label
+                                    >
+
+                                    <label for="load-truck"
+                                    ><input
+                                            type="radio"
+                                            id="load-truck"
+                                            name="auto"
+                                            value="Грузовой"
+                                    /><img
+                                            src="images/cars-select/load-truck.png"
+                                            alt=""
+                                    />Грузовой</label
+                                    >
+
+                                    <label for="more">
+                                        <input
+                                                type="radio"
+                                                id="more"
+                                                name="auto"
+                                                value="Другой"
+                                        />
+                                        <img
+                                                src="images/cars-select/sportcar.png"
+                                                alt=""
+                                        />
+                                        Другой</label
+                                    >
+
+                                    <span class="edit-btn">Изменить</span>
+                                </div>
                             </div> <!-- / tabs_item -->
 
                             <div class="tabs_item">
-                                <img src="https://cdn.dribbble.com/users/545884/screenshots/3576036/liberosis_--_10.png">
-                                <h4>Tab02 Maiores, suscipit</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, suscipit, eaque
-                                    asperiores neque numquam nam possimus dolorem ipsa aspernatur reiciendis?</p>
+                                <h4>Введите марку и модель транспорта</h4>
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <input
+                                                type="text"
+                                                placeholder="Марка автомобиля"
+                                                class="form-input brand-car"
+                                        />
+                                        <span class="desc mt-2"
+                                        >Например Lada</span
+                                        >
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input
+                                                type="text"
+                                                placeholder="Модель автомобиля"
+                                                class="form-input model-car"
+                                        />
+                                        <span class="desc mt-2">Например Vesta</span>
+                                    </div>
+                                </div>
+                                <div class="row btn-bar">
+                                    <div class="col-md-6">
+                                        <div class="fancy next">
+                                            <span class="top-key"></span>
+                                            <span class="btn">Подтвердить</span>
+                                            <span class="bottom-key-1"></span>
+                                            <span class="bottom-key-2"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="fancy skip">
+                                            <span class="top-key"></span>
+                                            <span class="btn">Пропустить</span>
+                                            <span class="bottom-key-1"></span>
+                                            <span class="bottom-key-2"></span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div> <!-- / tabs_item -->
 
                             <div class="tabs_item">
-                                <img src="https://cdn.dribbble.com/users/545884/screenshots/3557299/mo-t.png">
-                                <h4>Tab03</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, excepturi, minima,
-                                    corporis deserunt quia quae sit officiis labore inventore autem a delectus
-                                    consequuntur voluptatem modi eligendi similique sed nam vitae.</p>
+                                <h4>Введите направление и выберите дату отправки</h4>
+                                <div class="row mb-3">
+                                    <div class="col-md-4">
+                                        <input
+                                                type="text"
+                                                placeholder="Откуда"
+                                                class="form-input from"
+                                        />
+                                        <span class="desc"
+                                        >Например Казань</span>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input
+                                                type="text"
+                                                placeholder="Куда"
+                                                class="form-input to"
+                                        />
+                                        <span class="desc"
+                                        >Например Санкт-Питербург</span>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input
+                                                type="text"
+                                                placeholder="Выберите дату отправки"
+                                                class="form-input"
+                                                name="date"
+                                                id="datepicker"
+                                                required
+                                        />
+                                    </div>
+                                </div>
+                                <div class="row btn-bar">
+                                    <div class="col-md-12">
+                                        <div class="fancy done-order">
+                                            <span class="top-key"></span>
+                                            <span class="btn">Подтвердить данные</span>
+                                            <span class="bottom-key-1"></span>
+                                            <span class="bottom-key-2"></span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div> <!-- / tabs_item -->
                             <div class="tabs_item">
-                                <img src="https://cdn.dribbble.com/users/545884/screenshots/3557299/mo-t.png">
-                                <h4>Tab04</h4>
-                                <p>Lorem ipsum dolor si12123123t amet, consectetur adipisicing elit. Quaerat, excepturi,
-                                    minima,
-                                    corporis deserunt quia quae sit officiis labore inventore autem a delectus
-                                    consequuntur voluptatem modi eligendi similique sed nam vitae.</p>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="h6">
+                                            Вы хотите перевезти:
+                                        </div>
+                                        <p class="results" id="result">
+                                            Вы не заполнили важные поля
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row section mt-3">
+                                    <div class="col-md-12 col-section">
+                                        <div class="h6">
+                                            Узнайте стоимость прямо сейчас
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-section">
+                                        <input
+                                                type="text"
+                                                placeholder="ФИО"
+                                                class="form-input name mb-3"
+                                        />
+                                    </div>
+                                    <div class="col-md-6 col-section">
+                                        <input
+                                                type="text"
+                                                id="phone"
+                                                placeholder="Номер телефона"
+                                                class="form-input phone"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="row section mt-3">
+                                    <div class="col-md-12 col-section mb-3">
+                                        <input
+                                                type="checkbox"
+                                                name="agreement"
+                                                id="agreement"
+                                                checked
+                                        />
+                                        <span class="areement-desc"
+                                        >Согласен на обработку персональных данных</span
+                                        >
+                                    </div>
+                                    <div class="col-md-12 col-section">
+                                        <div class="fancy ready-order mb-3">
+                                            <span class="top-key"></span>
+                                            <span class="btn">Подтвердить</span>
+                                            <span class="bottom-key-1"></span>
+                                            <span class="bottom-key-2"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-section">
+                                        <p>
+                                            * В течение 5 минут с Вами свяжется
+                                            наш специалист и проинформирует вас
+                                            о стоимости перевозки, а также
+                                            ответит на все интересующие Вас
+                                            вопросы.
+                                        </p>
+                                    </div>
+                                </div>
                             </div> <!-- / tabs_item -->
 
                         </div> <!-- / tab_content -->
