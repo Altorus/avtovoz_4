@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Автовоз 4</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/global.css">
 
@@ -407,116 +408,45 @@
                     <div class="elementor-element elementor-element-18c77b8 elementor-widget elementor-widget-heading"
                          data-id="18c77b8" data-element_type="widget" data-widget_type="heading.default">
                         <div class="elementor-widget-container">
-                            <h2 class="elementor-heading-title elementor-size-default">Book your journey with us!</h2>
+                            <h2 class="elementor-heading-title elementor-size-default">Расчитайте стоимость прямо
+                                сейчас</h2>
                         </div>
                     </div>
-                    <div class="elementor-element elementor-element-8292e43 elementor-icon-list--layout-inline elementor-mobile-align-center elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
-                         data-id="8292e43" data-element_type="widget" data-widget_type="icon-list.default">
-                        <div class="elementor-widget-container">
-                            <ul class="elementor-icon-list-items elementor-inline-items">
-                                <li class="elementor-icon-list-item elementor-inline-item">
-											<span class="elementor-icon-list-icon">
-							<i aria-hidden="true" class="fas fa-check"></i>						</span>
-                                    <span class="elementor-icon-list-text">Competitive Prices</span>
-                                </li>
-                                <li class="elementor-icon-list-item elementor-inline-item">
-											<span class="elementor-icon-list-icon">
-							<i aria-hidden="true" class="fas fa-check"></i>						</span>
-                                    <span class="elementor-icon-list-text">Trusted Rent Service</span>
-                                </li>
-                                <li class="elementor-icon-list-item elementor-inline-item">
-											<span class="elementor-icon-list-icon">
-							<i aria-hidden="true" class="fas fa-check"></i>						</span>
-                                    <span class="elementor-icon-list-text">24/7 Support</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="elementor-element elementor-element-f639e64 elementor-button-align-stretch elementor-widget elementor-widget-form"
-                         data-id="f639e64" data-element_type="widget"
-                         data-settings="{&quot;button_width&quot;:&quot;20&quot;,&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}"
-                         data-widget_type="form.default">
-                        <div class="elementor-widget-container">
+                    <div class="tab">
 
-                            <form class="elementor-form" method="post" name="New Form">
-                                <input type="hidden" name="post_id" value="800"/>
-                                <input type="hidden" name="form_id" value="f639e64"/>
-                                <input type="hidden" name="referer_title" value="Homepage"/>
+                        <ul class="tabs">
+                            <li><a href="#">Tab01</a></li>
+                            <li><a href="#">Tab02</a></li>
+                            <li><a href="#">Tab03</a></li>
+                        </ul> <!-- / tabs -->
 
-                                <input type="hidden" name="queried_id" value="800"/>
+                        <div class="tab_content">
 
-                                <div class="elementor-form-fields-wrapper elementor-labels-">
-                                    <div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-40">
-                                        <label for="form-field-name"
-                                               class="elementor-field-label elementor-screen-only">
-                                            Type Car </label>
-                                        <input size="1" type="text" name="form_fields[name]" id="form-field-name"
-                                               class="elementor-field elementor-size-md  elementor-field-textual"
-                                               placeholder="Type Car">
-                                    </div>
-                                    <div class="elementor-field-type-date elementor-field-group elementor-column elementor-field-group-email elementor-col-30 elementor-field-required">
-                                        <label for="form-field-email"
-                                               class="elementor-field-label elementor-screen-only">
-                                            Pick-up Date </label>
+                            <div class="tabs_item">
+                                <img src="https://cdn.dribbble.com/users/545884/screenshots/3695553/news.png">
+                                <h4>Tab 01 Neque ipsum dolor.</h4>
+                                <p>Consectetur adipisicing elit. Neque, repellat facilis totam ab eos distinctio sint
+                                    atque maiores! Dignissimos, molestiae, rem accusantium iure vitae voluptatum
+                                    voluptas repudiandae deserunt dolore quis! Quisquam mollitia eius sed.</p>
+                            </div> <!-- / tabs_item -->
 
-                                        <input type="date" name="form_fields[email]" id="form-field-email"
-                                               class="elementor-field elementor-size-md  elementor-field-textual elementor-date-field"
-                                               placeholder="Pick-up Date" required="required" aria-required="true"
-                                               pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
-                                    </div>
-                                    <div class="elementor-field-type-date elementor-field-group elementor-column elementor-field-group-field_4a72f8f elementor-col-30 elementor-field-required">
-                                        <label for="form-field-field_4a72f8f"
-                                               class="elementor-field-label elementor-screen-only">
-                                            Drop-off Date </label>
+                            <div class="tabs_item">
+                                <img src="https://cdn.dribbble.com/users/545884/screenshots/3576036/liberosis_--_10.png">
+                                <h4>Tab02 Maiores, suscipit</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, suscipit, eaque
+                                    asperiores neque numquam nam possimus dolorem ipsa aspernatur reiciendis?</p>
+                            </div> <!-- / tabs_item -->
 
-                                        <input type="date" name="form_fields[field_4a72f8f]"
-                                               id="form-field-field_4a72f8f"
-                                               class="elementor-field elementor-size-md  elementor-field-textual elementor-date-field"
-                                               placeholder="Drop-off Date" required="required" aria-required="true"
-                                               pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
-                                    </div>
-                                    <div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-message elementor-col-40 elementor-field-required">
-                                        <label for="form-field-message"
-                                               class="elementor-field-label elementor-screen-only">
-                                            Name </label>
-                                        <input size="1" type="text" name="form_fields[message]" id="form-field-message"
-                                               class="elementor-field elementor-size-md  elementor-field-textual"
-                                               placeholder="Name" required="required" aria-required="true">
-                                    </div>
-                                    <div class="elementor-field-type-tel elementor-field-group elementor-column elementor-field-group-field_737b051 elementor-col-20 elementor-field-required">
-                                        <label for="form-field-field_737b051"
-                                               class="elementor-field-label elementor-screen-only">
-                                            Phone </label>
-                                        <input size="1" type="tel" name="form_fields[field_737b051]"
-                                               id="form-field-field_737b051"
-                                               class="elementor-field elementor-size-md  elementor-field-textual"
-                                               placeholder="Phone" required="required" aria-required="true"
-                                               pattern="[0-9()#&amp;+*-=.]+"
-                                               title="Only numbers and phone characters (#, -, *, etc) are accepted.">
+                            <div class="tabs_item">
+                                <img src="https://cdn.dribbble.com/users/545884/screenshots/3557299/mo-t.png">
+                                <h4>Tab03</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, excepturi, minima,
+                                    corporis deserunt quia quae sit officiis labore inventore autem a delectus
+                                    consequuntur voluptatem modi eligendi similique sed nam vitae.</p>
+                            </div> <!-- / tabs_item -->
 
-                                    </div>
-                                    <div class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-field_7339569 elementor-col-20 elementor-field-required">
-                                        <label for="form-field-field_7339569"
-                                               class="elementor-field-label elementor-screen-only">
-                                            Email </label>
-                                        <input size="1" type="email" name="form_fields[field_7339569]"
-                                               id="form-field-field_7339569"
-                                               class="elementor-field elementor-size-md  elementor-field-textual"
-                                               placeholder="Email" required="required" aria-required="true">
-                                    </div>
-                                    <div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-20 e-form__buttons">
-                                        <button type="submit" class="elementor-button elementor-size-md">
-						<span>
-															<span class=" elementor-button-icon">
-																										</span>
-																						<span class="elementor-button-text">Book Now !</span>
-													</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
+                        </div> <!-- / tab_content -->
+                    </div> <!-- / tab -->
                 </div>
             </div>
         </div>
@@ -1574,7 +1504,7 @@
                                             <div class="elementor-icon-box-wrapper">
                                                 <div class="elementor-icon-box-icon">
 				<span class="elementor-icon elementor-animation-">
-				<i aria-hidden="true" class="icon icon-calendar2"></i>				</span>
+				<i class="fa-solid fa-file"></i>				</span>
                                                 </div>
                                                 <div class="elementor-icon-box-content">
                                                     <h5 class="elementor-icon-box-title">
@@ -1601,7 +1531,7 @@
                                             <div class="elementor-icon-box-wrapper">
                                                 <div class="elementor-icon-box-icon">
 				<span class="elementor-icon elementor-animation-">
-				<i aria-hidden="true" class="icon icon-money-bag2"></i>				</span>
+				<i class="fa-solid fa-camera"></i>				</span>
                                                 </div>
                                                 <div class="elementor-icon-box-content">
                                                     <h5 class="elementor-icon-box-title">
@@ -1629,7 +1559,7 @@
                                             <div class="elementor-icon-box-wrapper">
                                                 <div class="elementor-icon-box-icon">
 				<span class="elementor-icon elementor-animation-">
-				<i aria-hidden="true" class="material-icons md-verified_user" data-md-icon="verified_user"></i>				</span>
+				<i class="fa-solid fa-car"></i>				</span>
                                                 </div>
                                                 <div class="elementor-icon-box-content">
                                                     <h5 class="elementor-icon-box-title">
@@ -2016,7 +1946,8 @@
                                          data-id="16a8ab3" data-element_type="widget"
                                          data-widget_type="heading.default">
                                         <div class="elementor-widget-container">
-                                            <div class="elementor-heading-title elementor-size-default">Оставьте свой телефон и мы перезвоним вам
+                                            <div class="elementor-heading-title elementor-size-default">Оставьте свой
+                                                телефон и мы перезвоним вам
                                             </div>
                                         </div>
                                         <div class="elementor-element elementor-element-982c32f elementor-button-align-stretch elementor-widget elementor-widget-form"
@@ -2139,6 +2070,8 @@
 <script type='text/javascript'
         src='https://show.moxcreative.com/autorent/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.7.4'
         id='pro-elements-handlers-js'></script>
+
+<script src="js/main.js"></script>
 
 </body>
 </html>
