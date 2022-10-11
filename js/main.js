@@ -99,9 +99,7 @@ $(document).ready(function () {
                 $(".from"),
                 $(".to"),
                 $("#datepicker"),
-            ];
-
-            console.table($("#datepicker").val())
+            ]
 
             let car = $('input[name="auto"]:checked').val(),
                 from = $(".from").val(),
@@ -124,7 +122,7 @@ $(document).ready(function () {
                     },
                     "form_kind": "main"
                 }
-                // sendAjaxRequest(objMain);
+                sendAjaxRequest(objMain);
                 // window.location.replace("/order_success");
             }
         }
