@@ -537,7 +537,20 @@ body {
 }
 
 .elementor-shape-rounded .elementor-icon.elementor-social-icon {
-    border-radius: 10%
+    border-radius: 10%;
+    display: flex;
+}
+
+
+.breadcrumbs{
+    padding: 2rem 15px;
+}
+
+.breadcrumbs .top-breadcrumbs{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
 }
 
 .elementor-shape-circle .elementor-icon.elementor-social-icon {
@@ -1265,9 +1278,9 @@ input[type="radio"] {
     align-items: center;
     border-left: 1px solid var(--e-global-color-3460580);
     border-top: 1px solid var(--e-global-color-3460580);
-    border-radius: 5px;
+    border-radius: 20px 0 20px 0;
     padding: 20px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .select-car {
@@ -1280,6 +1293,7 @@ input[type="radio"] {
 
 .select-car label:hover {
     cursor: pointer;
+    border-radius: 20px;
     background-color: var(--e-global-color-3460580);
     color: #fff;
 }

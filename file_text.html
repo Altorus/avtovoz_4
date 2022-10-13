@@ -40,6 +40,9 @@
           type='text/css' media='all'/>
     <script src="https://kit.fontawesome.com/68a7244d01.js" crossorigin="anonymous"></script>
     <script type='text/javascript' src='js/jquery/jquery.min.js' id='jquery-core-js'></script>
+    <!-- Пакет JavaScript с Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            crossorigin="anonymous"></script>
 </head>
 <body class="envato_tk_templates-template envato_tk_templates-template-elementor_header_footer single single-envato_tk_templates postid-800 qodef-qi--no-touch qi-addons-for-elementor-1.5.4 elementor-default elementor-template-full-width elementor-kit-22 elementor-page elementor-page-800">
 
@@ -48,16 +51,15 @@
      aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">Заголовок модального окна</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-            </div>
             <div class="modal-body">
-                ...
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
-                <button type="button" class="btn btn-primary">Понял</button>
+                <form method="post" action="#">
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Номер телефона</label>
+                        <input type="phone" class="form-control" id="phone">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Отправить</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </form>
             </div>
         </div>
     </div>
@@ -266,7 +268,7 @@
                     <div class="elementor-element elementor-element-c78c334 elementor-widget elementor-widget-image"
                          data-id="c78c334" data-element_type="widget" data-widget_type="image.default">
                         <div class="elementor-widget-container">
-                            <a href="https://show.moxcreative.com/autorent">
+                            <a href="index.html">
                                 <img src="https://show.moxcreative.com/autorent/wp-content/uploads/sites/58/elementor/thumbs/logo_autorent-pk55phs6ikwyzbaa4d3tpv6zacoysdm1xu32ptrwu8.png"
                                      title="logo_autorent" alt="logo_autorent"/> </a>
                         </div>
@@ -311,6 +313,9 @@
                                                    class="elementor-sub-item">Оформление документов</a></li>
                                         </ul>
                                     </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14"><a
+                                            href="reviews.html"
+                                            class="elementor-item">Отзывы</a></li>
                                 </ul>
                             </nav>
                             <div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle"
@@ -336,21 +341,24 @@
                                            class="elementor-item" tabindex="-1">Направления</a>
                                     </li>
                                     <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14"><a
-                                            href="https://show.moxcreative.com/autorent/template-kit/contact-us/"
+                                            href="contact-us.html"
                                             class="elementor-item" tabindex="-1">Контакты</a></li>
                                     <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-20">
                                         <a href="#" class="elementor-item elementor-item-anchor"
                                            tabindex="-1">Услуги</a>
                                         <ul class="sub-menu elementor-nav-menu--dropdown">
                                             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19">
-                                                <a href="https://show.moxcreative.com/autorent/template-kit/services/"
+                                                <a href="file_text.html"
                                                    class="elementor-sub-item" tabindex="-1">Заказать автовоз</a></li>
                                             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18">
-                                                <a href="https://show.moxcreative.com/autorent/template-kit/pricing-plan/"
+                                                <a href="file_text.html"
                                                    class="elementor-sub-item" tabindex="-1">Оформление документов</a>
                                             </li>
                                         </ul>
                                     </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14"><a
+                                            href="reviews.html"
+                                            class="elementor-item" tabindex="-1">Отзывы</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -406,8 +414,8 @@
                                             </li>
                                             <li class="elementor-icon-list-item elementor-inline-item">
 											<span class="elementor-icon-list-icon">
-							<i aria-hidden="true" class="icon icon-chevron-right"></i>						</span>
-                                                <span class="elementor-icon-list-text">Контакты</span>
+							<i class="fa-solid fa-angle-right"></i>						</span>
+                                                <span class="elementor-icon-list-text">Услуга</span>
                                             </li>
                                         </ul>
                                     </div>
@@ -459,7 +467,7 @@
                                         .elementor-widget-heading .elementor-heading-title.elementor-size-xxl {
                                             font-size: 59px
                                         }</style>
-                                        <h1 class="elementor-heading-title elementor-size-default">Контакты
+                                        <h1 class="elementor-heading-title elementor-size-default">Услуга
                                         </h1></div>
                                 </div>
                             </div>
@@ -472,51 +480,75 @@
 </section>
 <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Acf33051c02ec1b0d998d7695c1d133d6248cc6d7953219ad297d93c77810c309&amp;source=constructor"
         width="100%" height="400" frameborder="0"></iframe>
-<div class="container">
-    <h1>Заголовок 1</h1>
-    <h2>Заголовок 2</h2>
-    <h3>Заголовок 3</h3>
-    <h4>Заголовок 4</h4>
-    <h5>Заголовок 5</h5>
-    <h6>Заголовок 6</h6>
-    <p>Не следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности
-        способствует подготовки и реализации систем массового участия. Разнообразный и богатый опыт укрепление и
-        развитие структуры представляет собой интересный эксперимент проверки системы обучения кадров, соответствует
-        насущным потребностям. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм
-        деятельности в значительной степени обуславливает создание соответствующий условий активизации. Не следует,
-        однако забывать, что новая модель организационной деятельности влечет за собой процесс внедрения и модернизации
-        направлений прогрессивного развития. Идейные соображения высшего порядка, а также укрепление и развитие
-        структуры играет важную роль в формировании дальнейших направлений развития.
+<section
+        class="elementor-section elementor-top-section elementor-element elementor-element-3f931ed elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+        data-id="3f931ed" data-element_type="section"
+        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+    <div class="elementor-container elementor-column-gap-default">
+        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-943bb9c"
+             data-id="943bb9c" data-element_type="column">
+            <div class="elementor-widget-wrap elementor-element-populated">
+                <h1>Заголовок 1</h1>
+                <h2>Заголовок 2</h2>
+                <h3>Заголовок 3</h3>
+                <h4>Заголовок 4</h4>
+                <h5>Заголовок 5</h5>
+                <h6>Заголовок 6</h6>
+                <p>Не следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей
+                    деятельности
+                    способствует подготовки и реализации систем массового участия. Разнообразный и богатый опыт
+                    укрепление и
+                    развитие структуры представляет собой интересный эксперимент проверки системы обучения кадров,
+                    соответствует
+                    насущным потребностям. Идейные соображения высшего порядка, а также дальнейшее развитие различных
+                    форм
+                    деятельности в значительной степени обуславливает создание соответствующий условий активизации. Не
+                    следует,
+                    однако забывать, что новая модель организационной деятельности влечет за собой процесс внедрения и
+                    модернизации
+                    направлений прогрессивного развития. Идейные соображения высшего порядка, а также укрепление и
+                    развитие
+                    структуры играет важную роль в формировании дальнейших направлений развития.
 
-    </p>
-    <p>Не следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности
-        способствует подготовки и реализации систем массового участия. Разнообразный и богатый опыт укрепление и
-        развитие структуры представляет собой интересный эксперимент проверки системы обучения кадров, соответствует
-        насущным потребностям. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм
-        деятельности в значительной степени обуславливает создание соответствующий условий активизации. Не следует,
-        однако забывать, что новая модель организационной деятельности влечет за собой процесс внедрения и модернизации
-        направлений прогрессивного развития. Идейные соображения высшего порядка, а также укрепление и развитие
-        структуры играет важную роль в формировании дальнейших направлений развития.
+                </p>
+                <p>Не следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей
+                    деятельности
+                    способствует подготовки и реализации систем массового участия. Разнообразный и богатый опыт
+                    укрепление и
+                    развитие структуры представляет собой интересный эксперимент проверки системы обучения кадров,
+                    соответствует
+                    насущным потребностям. Идейные соображения высшего порядка, а также дальнейшее развитие различных
+                    форм
+                    деятельности в значительной степени обуславливает создание соответствующий условий активизации. Не
+                    следует,
+                    однако забывать, что новая модель организационной деятельности влечет за собой процесс внедрения и
+                    модернизации
+                    направлений прогрессивного развития. Идейные соображения высшего порядка, а также укрепление и
+                    развитие
+                    структуры играет важную роль в формировании дальнейших направлений развития.
 
-    </p>
+                </p>
 
-    <ul>
-        <li>Маркированный список</li>
-        <li>Маркированный список</li>
-        <li>Маркированный список</li>
-        <li>Маркированный список</li>
-        <li>Маркированный список</li>
-        <li>Маркированный список</li>
-    </ul>
+                <ul>
+                    <li>Маркированный список</li>
+                    <li>Маркированный список</li>
+                    <li>Маркированный список</li>
+                    <li>Маркированный список</li>
+                    <li>Маркированный список</li>
+                    <li>Маркированный список</li>
+                </ul>
 
-    <ol>
-        <li>Нумерованный список</li>
-        <li>Нумерованный список</li>
-        <li>Нумерованный список</li>
-        <li>Нумерованный список</li>
-        <li>Нумерованный список</li>
-    </ol>
-</div>
+                <ol>
+                    <li>Нумерованный список</li>
+                    <li>Нумерованный список</li>
+                    <li>Нумерованный список</li>
+                    <li>Нумерованный список</li>
+                    <li>Нумерованный список</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
 
 <div data-elementor-type="footer" data-elementor-id="43" class="elementor elementor-43 elementor-location-footer">
     <section
@@ -614,9 +646,13 @@
                                                     </a>
                                                 </li>
                                                 <li class="elementor-icon-list-item">
-                                                    <a href="#">
-
+                                                    <a href="contact-us.html">
                                                         <span class="elementor-icon-list-text">Контакты</span>
+                                                    </a>
+                                                </li>
+                                                <li class="elementor-icon-list-item">
+                                                    <a href="reviews.html">
+                                                        <span class="elementor-icon-list-text">Отзывы</span>
                                                     </a>
                                                 </li>
                                             </ul>

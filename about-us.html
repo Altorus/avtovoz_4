@@ -40,6 +40,9 @@
           type='text/css' media='all'/>
     <script src="https://kit.fontawesome.com/68a7244d01.js" crossorigin="anonymous"></script>
     <script type='text/javascript' src='js/jquery/jquery.min.js' id='jquery-core-js'></script>
+    <!-- Пакет JavaScript с Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            crossorigin="anonymous"></script>
 </head>
 <body class="envato_tk_templates-template envato_tk_templates-template-elementor_header_footer single single-envato_tk_templates postid-800 qodef-qi--no-touch qi-addons-for-elementor-1.5.4 elementor-default elementor-template-full-width elementor-kit-22 elementor-page elementor-page-800">
 
@@ -48,16 +51,15 @@
      aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">Заголовок модального окна</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-            </div>
             <div class="modal-body">
-                ...
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
-                <button type="button" class="btn btn-primary">Понял</button>
+                <form method="post" action="#">
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Номер телефона</label>
+                        <input type="phone" class="form-control" id="phone">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Отправить</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </form>
             </div>
         </div>
     </div>
@@ -304,12 +306,16 @@
                                         <a href="#" class="elementor-item elementor-item-anchor">Услуги</a>
                                         <ul class="sub-menu elementor-nav-menu--dropdown">
                                             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19">
-                                                <a href="#"
+                                                <a href="file_text.html"
                                                    class="elementor-sub-item">Заказ автовоза</a></li>
                                             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18">
-                                                <a href="#"
+                                                <a href="file_text.html"
                                                    class="elementor-sub-item">Оформление документов</a></li>
                                         </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11">
+                                        <a href="reviews.html"
+                                           class="elementor-item">Отзывы</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -332,11 +338,11 @@
                                             href="about-us.html"
                                             class="elementor-item" tabindex="-1">О компании</a></li>
                                     <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11">
-                                        <a href="https://show.moxcreative.com/autorent/template-kit/listing-car/"
+                                        <a href="direction.html"
                                            class="elementor-item" tabindex="-1">Направления</a>
                                     </li>
                                     <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14"><a
-                                            href="https://show.moxcreative.com/autorent/template-kit/contact-us/"
+                                            href="contact-us.html"
                                             class="elementor-item" tabindex="-1">Контакты</a></li>
                                     <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-20">
                                         <a href="#" class="elementor-item elementor-item-anchor"
@@ -350,6 +356,10 @@
                                                    class="elementor-sub-item" tabindex="-1">Оформление документов</a>
                                             </li>
                                         </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11">
+                                        <a href="reviews.html"
+                                           class="elementor-item" tabindex="-1">Отзывы</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -379,382 +389,306 @@
         </div>
     </section>
 </div>
-<section
-        class="elementor-section elementor-top-section elementor-element elementor-element-3e99de4 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-        data-id="3e99de4" data-element_type="section"
-        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-    <div class="elementor-container elementor-column-gap-no">
-        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8843404"
-             data-id="8843404" data-element_type="column"
-             data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-            <div class="elementor-widget-wrap elementor-element-populated">
-                <section
-                        class="elementor-section elementor-inner-section elementor-element elementor-element-20f9032 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                        data-id="20f9032" data-element_type="section"
-                        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                    <div class="elementor-container elementor-column-gap-default">
-                        <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-2145011"
-                             data-id="2145011" data-element_type="column">
-                            <div class="elementor-widget-wrap elementor-element-populated">
-                                <div class="elementor-element elementor-element-783408f elementor-icon-list--layout-inline elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
-                                     data-id="783408f" data-element_type="widget" data-widget_type="icon-list.default">
-                                    <div class="elementor-widget-container">
-                                        <ul class="elementor-icon-list-items elementor-inline-items">
-                                            <li class="elementor-icon-list-item elementor-inline-item">
-                                                <span class="elementor-icon-list-text"><a href="index.html">Главная</a></span>
-                                            </li>
-                                            <li class="elementor-icon-list-item elementor-inline-item">
-											<span class="elementor-icon-list-icon">
-							<i aria-hidden="true" class="icon icon-chevron-right"></i>						</span>
-                                                <span class="elementor-icon-list-text">О компании</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section
-                        class="elementor-section elementor-inner-section elementor-element elementor-element-a173a9f elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                        data-id="a173a9f" data-element_type="section"
-                        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                    <div class="elementor-container elementor-column-gap-default">
-                        <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-c1b2dc3"
-                             data-id="c1b2dc3" data-element_type="column">
-                            <div class="elementor-widget-wrap elementor-element-populated">
-                                <div class="elementor-element elementor-element-c8ff275 elementor-widget elementor-widget-heading"
-                                     data-id="c8ff275" data-element_type="widget" data-widget_type="heading.default">
-                                    <div class="elementor-widget-container">
-                                        <style>/*! elementor - v3.7.3 - 29-08-2022 */
-                                        .elementor-heading-title {
-                                            padding: 0;
-                                            margin: 0;
-                                            line-height: 1
-                                        }
-
-                                        .elementor-widget-heading .elementor-heading-title[class*=elementor-size-] > a {
-                                            color: inherit;
-                                            font-size: inherit;
-                                            line-height: inherit
-                                        }
-
-                                        .elementor-widget-heading .elementor-heading-title.elementor-size-small {
-                                            font-size: 15px
-                                        }
-
-                                        .elementor-widget-heading .elementor-heading-title.elementor-size-medium {
-                                            font-size: 19px
-                                        }
-
-                                        .elementor-widget-heading .elementor-heading-title.elementor-size-large {
-                                            font-size: 29px
-                                        }
-
-                                        .elementor-widget-heading .elementor-heading-title.elementor-size-xl {
-                                            font-size: 39px
-                                        }
-
-                                        .elementor-widget-heading .elementor-heading-title.elementor-size-xxl {
-                                            font-size: 59px
-                                        }</style>
-                                        <h1 class="elementor-heading-title elementor-size-default">О компании
-                                        </h1></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
+<section>
+    <div class="container breadcrumbs">
+        <div class="top-breadcrumbs">
+            <span><a href="index.html">Главная</a></span>
+            <i class="fa-solid fa-angle-right"></i>
+            <span>О компании</span>
         </div>
+        <div class="h1">О компании</div>
     </div>
 </section>
-<div class="container">
-    <p>
-        Компания "Автовоз РФ" уже более 10 лет занимается перевозкой автомобилей на автовозах по России и ближнему
-        зарубежью. За время существования компания постоянно совершенствовала сервис и логистику, что позволило выйти на
-        новый уровень качества обслуживания клиентов. В нашем парке только надежные европейские тягачи: MAN, DAF,
-        RENAULT, MERCEDES-BENZ и установки LOHR, EURO LOHR, ROLFO BLIZZARD.
 
-        Мы готовы решать любые поставленные задачи и предоставить Вам достойный сервис по минимальной цене.
-    </p>
-    <section
-            class="elementor-section elementor-top-section elementor-element elementor-element-ada3951 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-            data-id="ada3951" data-element_type="section">
-        <div class="elementor-container elementor-column-gap-default">
-            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-fe6a2ea"
-                 data-id="fe6a2ea" data-element_type="column"
-                 data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                <div class="elementor-widget-wrap elementor-element-populated form-orders-section">
-                    <div class="elementor-element elementor-element-18c77b8 elementor-widget elementor-widget-heading"
-                         data-id="18c77b8" data-element_type="widget" data-widget_type="heading.default">
-                        <div class="elementor-widget-container">
-                            <h2 class="elementor-heading-title elementor-size-default">Расчитайте стоимость прямо
-                                сейчас</h2>
+<section>
+    <div class="container">
+        <p>
+            Компания "Автовоз РФ" уже более 10 лет занимается перевозкой автомобилей на автовозах по России и ближнему
+            зарубежью. За время существования компания постоянно совершенствовала сервис и логистику, что позволило
+            выйти на
+            новый уровень качества обслуживания клиентов. В нашем парке только надежные европейские тягачи: MAN, DAF,
+            RENAULT, MERCEDES-BENZ и установки LOHR, EURO LOHR, ROLFO BLIZZARD.
+
+            Мы готовы решать любые поставленные задачи и предоставить Вам достойный сервис по минимальной цене.
+        </p>
+        <section
+                class="elementor-section elementor-top-section elementor-element elementor-element-ada3951 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                data-id="ada3951" data-element_type="section">
+            <div class="elementor-container elementor-column-gap-default">
+                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-fe6a2ea"
+                     data-id="fe6a2ea" data-element_type="column"
+                     data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                    <div class="elementor-widget-wrap elementor-element-populated form-orders-section">
+                        <div class="elementor-element elementor-element-18c77b8 elementor-widget elementor-widget-heading"
+                             data-id="18c77b8" data-element_type="widget" data-widget_type="heading.default">
+                            <div class="elementor-widget-container">
+                                <h2 class="elementor-heading-title elementor-size-default">Расчитайте стоимость прямо
+                                    сейчас</h2>
+                            </div>
                         </div>
+                        <div class="tab">
+
+                            <ul class="tabs">
+                                <li class="current"><a href="#" class="custom-tab">Тип транспорта</a></li>
+                                <li><a href="#" class="custom-tab">Модель и марка</a></li>
+                                <li><a href="#" class="custom-tab">Информация о доставке</a></li>
+                                <li><a href="#" class="custom-tab">Стоимость перевозки</a></li>
+                            </ul> <!-- / tabs -->
+                            <form action="#" method="post" id="form-order"></form>
+                            <div class="tab_content">
+                                <div class="tabs_item">
+                                    <h4>Какое транспортное средство вы хотите перевезти?</h4>
+                                    <div class="select-car" id="tab-1">
+                                        <label for="sedan">
+                                            <input
+                                                    type="radio"
+                                                    id="sedan"
+                                                    name="auto"
+                                                    value="Седан"
+                                                    required
+                                            />
+                                            <img
+                                                    src="images/cars-select/sedan.png"
+                                                    alt=""
+                                            />Седан</label
+                                        >
+
+                                        <label for="crossover">
+                                            <input
+                                                    type="radio"
+                                                    id="crossover"
+                                                    name="auto"
+                                                    value="Кроссовер"
+                                            /><img
+                                                src="images/cars-select/crossover.png"
+                                                alt=""
+                                        />Кроссовер</label
+                                        >
+
+                                        <label for="hatchback">
+                                            <input
+                                                    type="radio"
+                                                    id="hatchback"
+                                                    name="auto"
+                                                    value="Хэтчбэк"
+                                            /><img
+                                                src="images/cars-select/hatchback.png"
+                                                alt=""
+                                        />Хэтчбэк</label
+                                        >
+
+                                        <label for="universal">
+                                            <input
+                                                    type="radio"
+                                                    id="universal"
+                                                    name="auto"
+                                                    value="Универсал"
+                                            /><img
+                                                src="images/cars-select/universal.png"
+                                                alt=""
+                                        />Универсал</label
+                                        >
+
+                                        <label for="suv">
+                                            <input
+                                                    type="radio"
+                                                    id="suv"
+                                                    name="auto"
+                                                    value="Внедорожник"
+                                            /><img
+                                                src="images/cars-select/suv.png"
+                                                alt=""
+                                        />Внедорожник</label
+                                        >
+
+                                        <label for="load-truck"
+                                        ><input
+                                                type="radio"
+                                                id="load-truck"
+                                                name="auto"
+                                                value="Грузовой"
+                                        /><img
+                                                src="images/cars-select/load-truck.png"
+                                                alt=""
+                                        />Грузовой</label
+                                        >
+
+                                        <label for="more">
+                                            <input
+                                                    type="radio"
+                                                    id="more"
+                                                    name="auto"
+                                                    value="Другой"
+                                            />
+                                            <img
+                                                    src="images/cars-select/sportcar.png"
+                                                    alt=""
+                                            />
+                                            Другой</label
+                                        >
+
+                                        <span class="edit-btn">Изменить</span>
+                                    </div>
+                                </div> <!-- / tabs_item -->
+
+                                <div class="tabs_item">
+                                    <h4>Введите марку и модель транспорта</h4>
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <input
+                                                    type="text"
+                                                    placeholder="Марка автомобиля"
+                                                    class="form-input brand-car"
+                                            />
+                                            <span class="desc mt-2"
+                                            >Например Lada</span
+                                            >
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input
+                                                    type="text"
+                                                    placeholder="Модель автомобиля"
+                                                    class="form-input model-car"
+                                            />
+                                            <span class="desc mt-2">Например Vesta</span>
+                                        </div>
+                                    </div>
+                                    <div class="row btn-bar">
+                                        <div class="col-md-6">
+                                            <div class="fancy next">
+                                                <span class="top-key"></span>
+                                                <span class="btn">Подтвердить</span>
+                                                <span class="bottom-key-1"></span>
+                                                <span class="bottom-key-2"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="fancy skip">
+                                                <span class="top-key"></span>
+                                                <span class="btn">Пропустить</span>
+                                                <span class="bottom-key-1"></span>
+                                                <span class="bottom-key-2"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- / tabs_item -->
+
+                                <div class="tabs_item">
+                                    <h4>Введите направление и выберите дату отправки</h4>
+                                    <div class="row mb-3">
+                                        <div class="col-md-4">
+                                            <input
+                                                    type="text"
+                                                    placeholder="Откуда"
+                                                    class="form-input from"
+                                            />
+                                            <span class="desc"
+                                            >Например Казань</span>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input
+                                                    type="text"
+                                                    placeholder="Куда"
+                                                    class="form-input to"
+                                            />
+                                            <span class="desc"
+                                            >Например Санкт-Питербург</span>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input
+                                                    type="text"
+                                                    placeholder="Выберите дату отправки"
+                                                    class="form-input"
+                                                    name="date"
+                                                    id="datepicker"
+                                                    required
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="row btn-bar">
+                                        <div class="col-md-12">
+                                            <div class="fancy done-order">
+                                                <span class="top-key"></span>
+                                                <span class="btn">Подтвердить данные</span>
+                                                <span class="bottom-key-1"></span>
+                                                <span class="bottom-key-2"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- / tabs_item -->
+                                <div class="tabs_item">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="h6">
+                                                Вы хотите перевезти:
+                                            </div>
+                                            <p class="results" id="result">
+                                                Вы не заполнили важные поля
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row section mt-3">
+                                        <div class="col-md-12 col-section">
+                                            <div class="h6">
+                                                Узнайте стоимость прямо сейчас
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-section">
+                                            <input
+                                                    type="text"
+                                                    placeholder="ФИО"
+                                                    class="form-input name mb-3"
+                                            />
+                                        </div>
+                                        <div class="col-md-6 col-section">
+                                            <input
+                                                    type="text"
+                                                    id="phone"
+                                                    placeholder="Номер телефона"
+                                                    class="form-input phone"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="row section mt-3">
+                                        <div class="col-md-12 col-section mb-3">
+                                            <input
+                                                    type="checkbox"
+                                                    name="agreement"
+                                                    id="agreement"
+                                                    checked
+                                            />
+                                            <span class="areement-desc"
+                                            >Согласен на обработку персональных данных</span
+                                            >
+                                        </div>
+                                        <div class="col-md-12 col-section">
+                                            <div class="fancy ready-order mb-3">
+                                                <span class="top-key"></span>
+                                                <span class="btn">Подтвердить</span>
+                                                <span class="bottom-key-1"></span>
+                                                <span class="bottom-key-2"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-section">
+                                            <p>
+                                                * В течение 5 минут с Вами свяжется
+                                                наш специалист и проинформирует вас
+                                                о стоимости перевозки, а также
+                                                ответит на все интересующие Вас
+                                                вопросы.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div> <!-- / tabs_item -->
+
+                            </div> <!-- / tab_content -->
+                        </div> <!-- / tab -->
                     </div>
-                    <div class="tab">
-
-                        <ul class="tabs">
-                            <li class="current"><a href="#" class="custom-tab">Тип транспорта</a></li>
-                            <li><a href="#" class="custom-tab">Модель и марка</a></li>
-                            <li><a href="#" class="custom-tab">Информация о доставке</a></li>
-                            <li><a href="#" class="custom-tab">Стоимость перевозки</a></li>
-                        </ul> <!-- / tabs -->
-                        <form action="#" method="post" id="form-order"></form>
-                        <div class="tab_content">
-                            <div class="tabs_item">
-                                <h4>Какое транспортное средство вы хотите перевезти?</h4>
-                                <div class="select-car" id="tab-1">
-                                    <label for="sedan">
-                                        <input
-                                                type="radio"
-                                                id="sedan"
-                                                name="auto"
-                                                value="Седан"
-                                                required
-                                        />
-                                        <img
-                                                src="images/cars-select/sedan.png"
-                                                alt=""
-                                        />Седан</label
-                                    >
-
-                                    <label for="crossover">
-                                        <input
-                                                type="radio"
-                                                id="crossover"
-                                                name="auto"
-                                                value="Кроссовер"
-                                        /><img
-                                            src="images/cars-select/crossover.png"
-                                            alt=""
-                                    />Кроссовер</label
-                                    >
-
-                                    <label for="hatchback">
-                                        <input
-                                                type="radio"
-                                                id="hatchback"
-                                                name="auto"
-                                                value="Хэтчбэк"
-                                        /><img
-                                            src="images/cars-select/hatchback.png"
-                                            alt=""
-                                    />Хэтчбэк</label
-                                    >
-
-                                    <label for="universal">
-                                        <input
-                                                type="radio"
-                                                id="universal"
-                                                name="auto"
-                                                value="Универсал"
-                                        /><img
-                                            src="images/cars-select/universal.png"
-                                            alt=""
-                                    />Универсал</label
-                                    >
-
-                                    <label for="suv">
-                                        <input
-                                                type="radio"
-                                                id="suv"
-                                                name="auto"
-                                                value="Внедорожник"
-                                        /><img
-                                            src="images/cars-select/suv.png"
-                                            alt=""
-                                    />Внедорожник</label
-                                    >
-
-                                    <label for="load-truck"
-                                    ><input
-                                            type="radio"
-                                            id="load-truck"
-                                            name="auto"
-                                            value="Грузовой"
-                                    /><img
-                                            src="images/cars-select/load-truck.png"
-                                            alt=""
-                                    />Грузовой</label
-                                    >
-
-                                    <label for="more">
-                                        <input
-                                                type="radio"
-                                                id="more"
-                                                name="auto"
-                                                value="Другой"
-                                        />
-                                        <img
-                                                src="images/cars-select/sportcar.png"
-                                                alt=""
-                                        />
-                                        Другой</label
-                                    >
-
-                                    <span class="edit-btn">Изменить</span>
-                                </div>
-                            </div> <!-- / tabs_item -->
-
-                            <div class="tabs_item">
-                                <h4>Введите марку и модель транспорта</h4>
-                                <div class="row mb-3">
-                                    <div class="col-md-6">
-                                        <input
-                                                type="text"
-                                                placeholder="Марка автомобиля"
-                                                class="form-input brand-car"
-                                        />
-                                        <span class="desc mt-2"
-                                        >Например Lada</span
-                                        >
-                                    </div>
-                                    <div class="col-md-6">
-                                        <input
-                                                type="text"
-                                                placeholder="Модель автомобиля"
-                                                class="form-input model-car"
-                                        />
-                                        <span class="desc mt-2">Например Vesta</span>
-                                    </div>
-                                </div>
-                                <div class="row btn-bar">
-                                    <div class="col-md-6">
-                                        <div class="fancy next">
-                                            <span class="top-key"></span>
-                                            <span class="btn">Подтвердить</span>
-                                            <span class="bottom-key-1"></span>
-                                            <span class="bottom-key-2"></span>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="fancy skip">
-                                            <span class="top-key"></span>
-                                            <span class="btn">Пропустить</span>
-                                            <span class="bottom-key-1"></span>
-                                            <span class="bottom-key-2"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> <!-- / tabs_item -->
-
-                            <div class="tabs_item">
-                                <h4>Введите направление и выберите дату отправки</h4>
-                                <div class="row mb-3">
-                                    <div class="col-md-4">
-                                        <input
-                                                type="text"
-                                                placeholder="Откуда"
-                                                class="form-input from"
-                                        />
-                                        <span class="desc"
-                                        >Например Казань</span>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <input
-                                                type="text"
-                                                placeholder="Куда"
-                                                class="form-input to"
-                                        />
-                                        <span class="desc"
-                                        >Например Санкт-Питербург</span>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <input
-                                                type="text"
-                                                placeholder="Выберите дату отправки"
-                                                class="form-input"
-                                                name="date"
-                                                id="datepicker"
-                                                required
-                                        />
-                                    </div>
-                                </div>
-                                <div class="row btn-bar">
-                                    <div class="col-md-12">
-                                        <div class="fancy done-order">
-                                            <span class="top-key"></span>
-                                            <span class="btn">Подтвердить данные</span>
-                                            <span class="bottom-key-1"></span>
-                                            <span class="bottom-key-2"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> <!-- / tabs_item -->
-                            <div class="tabs_item">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="h6">
-                                            Вы хотите перевезти:
-                                        </div>
-                                        <p class="results" id="result">
-                                            Вы не заполнили важные поля
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="row section mt-3">
-                                    <div class="col-md-12 col-section">
-                                        <div class="h6">
-                                            Узнайте стоимость прямо сейчас
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-section">
-                                        <input
-                                                type="text"
-                                                placeholder="ФИО"
-                                                class="form-input name mb-3"
-                                        />
-                                    </div>
-                                    <div class="col-md-6 col-section">
-                                        <input
-                                                type="text"
-                                                id="phone"
-                                                placeholder="Номер телефона"
-                                                class="form-input phone"
-                                        />
-                                    </div>
-                                </div>
-                                <div class="row section mt-3">
-                                    <div class="col-md-12 col-section mb-3">
-                                        <input
-                                                type="checkbox"
-                                                name="agreement"
-                                                id="agreement"
-                                                checked
-                                        />
-                                        <span class="areement-desc"
-                                        >Согласен на обработку персональных данных</span
-                                        >
-                                    </div>
-                                    <div class="col-md-12 col-section">
-                                        <div class="fancy ready-order mb-3">
-                                            <span class="top-key"></span>
-                                            <span class="btn">Подтвердить</span>
-                                            <span class="bottom-key-1"></span>
-                                            <span class="bottom-key-2"></span>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 col-section">
-                                        <p>
-                                            * В течение 5 минут с Вами свяжется
-                                            наш специалист и проинформирует вас
-                                            о стоимости перевозки, а также
-                                            ответит на все интересующие Вас
-                                            вопросы.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div> <!-- / tabs_item -->
-
-                        </div> <!-- / tab_content -->
-                    </div> <!-- / tab -->
                 </div>
             </div>
-        </div>
-    </section>
-</div>
+        </section>
+    </div>
+</section>
 
 <div data-elementor-type="footer" data-elementor-id="43" class="elementor elementor-43 elementor-location-footer">
     <section
@@ -852,9 +786,15 @@
                                                     </a>
                                                 </li>
                                                 <li class="elementor-icon-list-item">
-                                                    <a href="#">
+                                                    <a href="contact-us.html">
 
                                                         <span class="elementor-icon-list-text">Контакты</span>
+                                                    </a>
+                                                </li>
+                                                <li class="elementor-icon-list-item">
+                                                    <a href="reviews.html">
+
+                                                        <span class="elementor-icon-list-text">Отзывы</span>
                                                     </a>
                                                 </li>
                                             </ul>
