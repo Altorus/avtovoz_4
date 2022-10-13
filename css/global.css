@@ -1251,9 +1251,10 @@ body {
 }
 
 .current a {
-    color: #fff;
+    color: #fff !important;
     background: var(--e-global-color-3460580);
 }
+
 
 li.current a.custom-tab:hover {
     color: #fff !important;
