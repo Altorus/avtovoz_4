@@ -1,13 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title><!doctype html>
-        <html lang="ru">
-        <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Автовоз 4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Автовоз 4</title>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <link rel="stylesheet" href="dist/css/bootstrap.css">
     <script src="js/script.js"></script>
@@ -46,6 +42,26 @@
     <script type='text/javascript' src='js/jquery/jquery.min.js' id='jquery-core-js'></script>
 </head>
 <body class="envato_tk_templates-template envato_tk_templates-template-elementor_header_footer single single-envato_tk_templates postid-800 qodef-qi--no-touch qi-addons-for-elementor-1.5.4 elementor-default elementor-template-full-width elementor-kit-22 elementor-page elementor-page-800">
+
+<!-- Модальное окно -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+     aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Заголовок модального окна</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                <button type="button" class="btn btn-primary">Понял</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
      style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
@@ -352,8 +368,8 @@
                                    role="button">
 						<span class="elementor-button-content-wrapper">
 							<span class="elementor-button-icon elementor-align-icon-left">
-				<i aria-hidden="true" class="material-icons md-directions_car" data-md-icon="directions_car"></i>			</span>
-						<span class="elementor-button-text">Оформить заявку</span>
+				</span>
+						<span class="elementor-button-text" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Оформить заявку</span>
 		</span>
                                 </a>
                             </div>

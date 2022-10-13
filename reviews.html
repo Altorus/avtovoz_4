@@ -1,0 +1,745 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Автовоз 4</title>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <link rel="stylesheet" href="dist/css/bootstrap.css">
+  <script src="js/script.js"></script>
+  <script src="dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="jquery_ui/jquery-ui.min.css"/>
+  <link rel="stylesheet" href="css/global.css">
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <link rel='stylesheet' id='hello-elementor-css'
+        href='css/hello-elementor.min.css'
+        type='text/css' media='all'/>
+  <link rel='stylesheet' id='elementor-frontend-css'
+        href='css/frontend-lite.min.css'
+        type='text/css' media='all'/>
+  <link rel='stylesheet' id='elementor-post-22-css'
+        href='css/post-22.css'
+        type='text/css' media='all'/>
+  <link rel='stylesheet' id='elementor-pro-css'
+        href='css/frontend-lite3_7_4.min.css'
+        type='text/css' media='all'/>
+  <link rel='stylesheet' id='elementor-post-800-css'
+        href='css/post-800.css'
+        type='text/css' media='all'/>
+  <link rel='stylesheet' id='elementor-post-33-css'
+        href='css/post-33.css'
+        type='text/css' media='all'/>
+  <link rel='stylesheet' id='elementor-post-43-css'
+        href='css/post-43.css'
+        type='text/css' media='all'/>
+  <link rel='stylesheet' id='ekit-widget-styles-css'
+        href='css/widget-styles.css'
+        type='text/css' media='all'/>
+  <link rel='stylesheet' id='google-fonts-1-css'
+        href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CHeebo%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=6.0.2'
+        type='text/css' media='all'/>
+  <script src="https://kit.fontawesome.com/68a7244d01.js" crossorigin="anonymous"></script>
+  <script type='text/javascript' src='js/jquery/jquery.min.js' id='jquery-core-js'></script>
+</head>
+<body class="envato_tk_templates-template envato_tk_templates-template-elementor_header_footer single single-envato_tk_templates postid-800 qodef-qi--no-touch qi-addons-for-elementor-1.5.4 elementor-default elementor-template-full-width elementor-kit-22 elementor-page elementor-page-800">
+
+<!-- Модальное окно -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+     aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Заголовок модального окна</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+        <button type="button" class="btn btn-primary">Понял</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+     style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+  <defs>
+    <filter id="wp-duotone-dark-grayscale">
+      <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                     values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "/>
+      <feComponentTransfer color-interpolation-filters="sRGB">
+        <feFuncR type="table" tableValues="0 0.49803921568627"/>
+        <feFuncG type="table" tableValues="0 0.49803921568627"/>
+        <feFuncB type="table" tableValues="0 0.49803921568627"/>
+        <feFuncA type="table" tableValues="1 1"/>
+      </feComponentTransfer>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+  </defs>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+     style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+  <defs>
+    <filter id="wp-duotone-grayscale">
+      <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                     values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "/>
+      <feComponentTransfer color-interpolation-filters="sRGB">
+        <feFuncR type="table" tableValues="0 1"/>
+        <feFuncG type="table" tableValues="0 1"/>
+        <feFuncB type="table" tableValues="0 1"/>
+        <feFuncA type="table" tableValues="1 1"/>
+      </feComponentTransfer>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+  </defs>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+     style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+  <defs>
+    <filter id="wp-duotone-purple-yellow">
+      <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                     values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "/>
+      <feComponentTransfer color-interpolation-filters="sRGB">
+        <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765"/>
+        <feFuncG type="table" tableValues="0 1"/>
+        <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431"/>
+        <feFuncA type="table" tableValues="1 1"/>
+      </feComponentTransfer>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+  </defs>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+     style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+  <defs>
+    <filter id="wp-duotone-blue-red">
+      <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                     values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "/>
+      <feComponentTransfer color-interpolation-filters="sRGB">
+        <feFuncR type="table" tableValues="0 1"/>
+        <feFuncG type="table" tableValues="0 0.27843137254902"/>
+        <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902"/>
+        <feFuncA type="table" tableValues="1 1"/>
+      </feComponentTransfer>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+  </defs>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+     style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+  <defs>
+    <filter id="wp-duotone-midnight">
+      <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                     values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "/>
+      <feComponentTransfer color-interpolation-filters="sRGB">
+        <feFuncR type="table" tableValues="0 0"/>
+        <feFuncG type="table" tableValues="0 0.64705882352941"/>
+        <feFuncB type="table" tableValues="0 1"/>
+        <feFuncA type="table" tableValues="1 1"/>
+      </feComponentTransfer>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+  </defs>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+     style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+  <defs>
+    <filter id="wp-duotone-magenta-yellow">
+      <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                     values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "/>
+      <feComponentTransfer color-interpolation-filters="sRGB">
+        <feFuncR type="table" tableValues="0.78039215686275 1"/>
+        <feFuncG type="table" tableValues="0 0.94901960784314"/>
+        <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412"/>
+        <feFuncA type="table" tableValues="1 1"/>
+      </feComponentTransfer>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+  </defs>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+     style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+  <defs>
+    <filter id="wp-duotone-purple-green">
+      <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                     values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "/>
+      <feComponentTransfer color-interpolation-filters="sRGB">
+        <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745"/>
+        <feFuncG type="table" tableValues="0 1"/>
+        <feFuncB type="table" tableValues="0.44705882352941 0.4"/>
+        <feFuncA type="table" tableValues="1 1"/>
+      </feComponentTransfer>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+  </defs>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+     style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+  <defs>
+    <filter id="wp-duotone-blue-orange">
+      <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                     values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "/>
+      <feComponentTransfer color-interpolation-filters="sRGB">
+        <feFuncR type="table" tableValues="0.098039215686275 1"/>
+        <feFuncG type="table" tableValues="0 0.66274509803922"/>
+        <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725"/>
+        <feFuncA type="table" tableValues="1 1"/>
+      </feComponentTransfer>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+  </defs>
+</svg>
+<div data-elementor-type="header" data-elementor-id="33" class="elementor elementor-33 elementor-location-header">
+  <section
+          class="elementor-section elementor-top-section elementor-element elementor-element-f8a0abe elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+          data-id="f8a0abe" data-element_type="section"
+          data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+    <div class="elementor-container elementor-column-gap-default">
+      <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-dab40f3"
+           data-id="dab40f3" data-element_type="column">
+        <div class="elementor-widget-wrap elementor-element-populated">
+          <div class="elementor-element elementor-element-84303c1 elementor-icon-list--layout-inline elementor-mobile-align-center elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+               data-id="84303c1" data-element_type="widget" data-widget_type="icon-list.default">
+            <div class="elementor-widget-container">
+              <link rel="stylesheet"
+                    href="https://show.moxcreative.com/autorent/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css">
+              <ul class="elementor-icon-list-items elementor-inline-items">
+                <li class="elementor-icon-list-item elementor-inline-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="material-icons md-phone_in_talk"
+                               data-md-icon="phone_in_talk"></i>						</span>
+                  <span class="elementor-icon-list-text">8 (800) 444-12-14</span>
+                </li>
+                <li class="elementor-icon-list-item elementor-inline-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="material-icons md-alternate_email"
+                               data-md-icon="alternate_email"></i>						</span>
+                  <span class="elementor-icon-list-text">manager@avtovoz247.ru</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-89c39f2 elementor-hidden-mobile"
+           data-id="89c39f2" data-element_type="column">
+        <div class="elementor-widget-wrap elementor-element-populated">
+          <div class="elementor-element elementor-element-e74d598 e-grid-align-right elementor-shape-rounded elementor-grid-0 elementor-widget elementor-widget-social-icons"
+               data-id="e74d598" data-element_type="widget" data-widget_type="social-icons.default">
+            <div class="elementor-widget-container">
+              <div class="elementor-social-icons-wrapper elementor-grid">
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook-f elementor-animation-pop elementor-repeater-item-0842173"
+                       target="_blank">
+						<span class="elementor-screen-only">Facebook-f</span>
+						<i class="fa-brands fa-telegram"></i></a>
+				</span>
+                <span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-animation-pop elementor-repeater-item-4c48bf4"
+                       target="_blank">
+						<span class="elementor-screen-only">Twitter</span>
+						<i class="fa-brands fa-viber"></i></a>
+				</span>
+                <span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-linkedin-in elementor-animation-pop elementor-repeater-item-9af459b"
+                       target="_blank">
+						<span class="elementor-screen-only">Linkedin-in</span>
+						<i class="fa-brands fa-whatsapp"></i></a>
+				</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+          class="elementor-section elementor-top-section elementor-element elementor-element-604ea96 elementor-section-content-middle elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+          data-id="604ea96" data-element_type="section"
+          data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+    <div class="elementor-container elementor-column-gap-default">
+      <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-179d4d1"
+           data-id="179d4d1" data-element_type="column">
+        <div class="elementor-widget-wrap elementor-element-populated">
+          <div class="elementor-element elementor-element-c78c334 elementor-widget elementor-widget-image"
+               data-id="c78c334" data-element_type="widget" data-widget_type="image.default">
+            <div class="elementor-widget-container">
+              <a href="https://show.moxcreative.com/autorent">
+                <img src="https://show.moxcreative.com/autorent/wp-content/uploads/sites/58/elementor/thumbs/logo_autorent-pk55phs6ikwyzbaa4d3tpv6zacoysdm1xu32ptrwu8.png"
+                     title="logo_autorent" alt="logo_autorent"/> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-30f3a6a"
+           data-id="30f3a6a" data-element_type="column">
+        <div class="elementor-widget-wrap elementor-element-populated">
+          <div class="elementor-element elementor-element-30950be elementor-nav-menu__align-right elementor-nav-menu--stretch elementor-nav-menu--dropdown-tablet elementor-nav-menu__text-align-aside elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu"
+               data-id="30950be" data-element_type="widget"
+               data-settings="{&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;fas fa-chevron-down\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;},&quot;full_width&quot;:&quot;stretch&quot;,&quot;layout&quot;:&quot;horizontal&quot;,&quot;toggle&quot;:&quot;burger&quot;}"
+               data-widget_type="nav-menu.default">
+            <div class="elementor-widget-container">
+              <link rel="stylesheet"
+                    href="https://show.moxcreative.com/autorent/wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css">
+              <nav migration_allowed="1" migrated="0" role="navigation"
+                   class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-none">
+                <ul id="menu-1-30950be" class="elementor-nav-menu">
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-8">
+                    <a href="index.html"
+                       aria-current="page" class="elementor-item elementor-item-active">Главная</a>
+                  </li>
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9"><a
+                          href="about-us.html"
+                          class="elementor-item">О компании</a></li>
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11">
+                    <a href="direction.html"
+                       class="elementor-item">Направления</a>
+                  </li>
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14"><a
+                          href="contact-us.html"
+                          class="elementor-item">Контакты</a></li>
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-20">
+                    <a href="#" class="elementor-item elementor-item-anchor">Услуги</a>
+                    <ul class="sub-menu elementor-nav-menu--dropdown">
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19">
+                        <a href="#"
+                           class="elementor-sub-item">Заказ автовоза</a></li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18">
+                        <a href="#"
+                           class="elementor-sub-item">Оформление документов</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+              <div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle"
+                   aria-expanded="false">
+                <i aria-hidden="true" role="presentation"
+                   class="elementor-menu-toggle__icon--open eicon-menu-bar"></i><i aria-hidden="true"
+                                                                                   role="presentation"
+                                                                                   class="elementor-menu-toggle__icon--close eicon-close"></i>
+                <span class="elementor-screen-only">Меню</span>
+              </div>
+              <nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" role="navigation"
+                   aria-hidden="true">
+                <ul id="menu-2-30950be" class="elementor-nav-menu">
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-8">
+                    <a href="index.html"
+                       aria-current="page" class="elementor-item elementor-item-active"
+                       tabindex="-1">Главная</a></li>
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9"><a
+                          href="about-us.html"
+                          class="elementor-item" tabindex="-1">О компании</a></li>
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11">
+                    <a href="https://show.moxcreative.com/autorent/template-kit/listing-car/"
+                       class="elementor-item" tabindex="-1">Направления</a>
+                  </li>
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14"><a
+                          href="https://show.moxcreative.com/autorent/template-kit/contact-us/"
+                          class="elementor-item" tabindex="-1">Контакты</a></li>
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-20">
+                    <a href="#" class="elementor-item elementor-item-anchor"
+                       tabindex="-1">Услуги</a>
+                    <ul class="sub-menu elementor-nav-menu--dropdown">
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19">
+                        <a href="https://show.moxcreative.com/autorent/template-kit/services/"
+                           class="elementor-sub-item" tabindex="-1">Заказать автовоз</a></li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18">
+                        <a href="https://show.moxcreative.com/autorent/template-kit/pricing-plan/"
+                           class="elementor-sub-item" tabindex="-1">Оформление документов</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-726c7bf elementor-hidden-mobile"
+           data-id="726c7bf" data-element_type="column">
+        <div class="elementor-widget-wrap elementor-element-populated">
+          <div class="elementor-element elementor-element-249e69d elementor-align-right elementor-tablet-align-justify elementor-widget elementor-widget-button"
+               data-id="249e69d" data-element_type="widget" data-widget_type="button.default">
+            <div class="elementor-widget-container">
+              <div class="elementor-button-wrapper">
+                <a href="#" class="elementor-button-link elementor-button elementor-size-md"
+                   role="button">
+						<span class="elementor-button-content-wrapper">
+							<span class="elementor-button-icon elementor-align-icon-left">
+				</span>
+						<span class="elementor-button-text" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Оформить заявку</span>
+		</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<section
+        class="elementor-section elementor-top-section elementor-element elementor-element-3e99de4 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+        data-id="3e99de4" data-element_type="section"
+        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+  <div class="elementor-container elementor-column-gap-no">
+    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8843404"
+         data-id="8843404" data-element_type="column"
+         data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+      <div class="elementor-widget-wrap elementor-element-populated">
+        <section
+                class="elementor-section elementor-inner-section elementor-element elementor-element-20f9032 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                data-id="20f9032" data-element_type="section"
+                data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+          <div class="elementor-container elementor-column-gap-default">
+            <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-2145011"
+                 data-id="2145011" data-element_type="column">
+              <div class="elementor-widget-wrap elementor-element-populated">
+                <div class="elementor-element elementor-element-783408f elementor-icon-list--layout-inline elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+                     data-id="783408f" data-element_type="widget" data-widget_type="icon-list.default">
+                  <div class="elementor-widget-container">
+                    <ul class="elementor-icon-list-items elementor-inline-items">
+                      <li class="elementor-icon-list-item elementor-inline-item">
+                        <span class="elementor-icon-list-text"><a href="index.html">Главная</a></span>
+                      </li>
+                      <li class="elementor-icon-list-item elementor-inline-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="icon icon-chevron-right"></i>						</span>
+                        <span class="elementor-icon-list-text">Контакты</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+                class="elementor-section elementor-inner-section elementor-element elementor-element-a173a9f elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                data-id="a173a9f" data-element_type="section"
+                data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+          <div class="elementor-container elementor-column-gap-default">
+            <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-c1b2dc3"
+                 data-id="c1b2dc3" data-element_type="column">
+              <div class="elementor-widget-wrap elementor-element-populated">
+                <div class="elementor-element elementor-element-c8ff275 elementor-widget elementor-widget-heading"
+                     data-id="c8ff275" data-element_type="widget" data-widget_type="heading.default">
+                  <div class="elementor-widget-container">
+                    <style>/*! elementor - v3.7.3 - 29-08-2022 */
+                    .elementor-heading-title {
+                      padding: 0;
+                      margin: 0;
+                      line-height: 1
+                    }
+
+                    .elementor-widget-heading .elementor-heading-title[class*=elementor-size-] > a {
+                      color: inherit;
+                      font-size: inherit;
+                      line-height: inherit
+                    }
+
+                    .elementor-widget-heading .elementor-heading-title.elementor-size-small {
+                      font-size: 15px
+                    }
+
+                    .elementor-widget-heading .elementor-heading-title.elementor-size-medium {
+                      font-size: 19px
+                    }
+
+                    .elementor-widget-heading .elementor-heading-title.elementor-size-large {
+                      font-size: 29px
+                    }
+
+                    .elementor-widget-heading .elementor-heading-title.elementor-size-xl {
+                      font-size: 39px
+                    }
+
+                    .elementor-widget-heading .elementor-heading-title.elementor-size-xxl {
+                      font-size: 59px
+                    }</style>
+                    <h1 class="elementor-heading-title elementor-size-default">Контакты
+                    </h1></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row">
+        <div class="card">
+            <div class="card-header">
+                Рекомендуемые
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Особое обращение с заголовком</h5>
+                <p class="card-text">С вспомогательным текстом ниже в качестве естественного перехода к дополнительному контенту.</p>
+            </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+<div data-elementor-type="footer" data-elementor-id="43" class="elementor elementor-43 elementor-location-footer">
+  <section
+          class="elementor-section elementor-top-section elementor-element elementor-element-b87a8c8 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+          data-id="b87a8c8" data-element_type="section"
+          data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+    <div class="elementor-container elementor-column-gap-no">
+      <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-da46bd5"
+           data-id="da46bd5" data-element_type="column">
+        <div class="elementor-widget-wrap elementor-element-populated">
+          <section
+                  class="elementor-section elementor-inner-section elementor-element elementor-element-166413a elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                  data-id="166413a" data-element_type="section">
+            <div class="elementor-container elementor-column-gap-default">
+              <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-694a927"
+                   data-id="694a927" data-element_type="column">
+                <div class="elementor-widget-wrap elementor-element-populated">
+                  <div class="elementor-element elementor-element-3426f29 elementor-widget elementor-widget-heading"
+                       data-id="3426f29" data-element_type="widget"
+                       data-widget_type="heading.default">
+                    <div class="elementor-widget-container">
+                      <h4 class="elementor-heading-title elementor-size-default">Услуги</h4>
+                    </div>
+                  </div>
+                  <div class="elementor-element elementor-element-8eeb8e4 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+                       data-id="8eeb8e4" data-element_type="widget"
+                       data-widget_type="icon-list.default">
+                    <div class="elementor-widget-container">
+                      <ul class="elementor-icon-list-items">
+                        <li class="elementor-icon-list-item">
+                          <a href="#">
+
+                            <span class="elementor-icon-list-text">Услуга</span>
+                          </a>
+                        </li>
+                        <li class="elementor-icon-list-item">
+                          <a href="#">
+
+                            <span class="elementor-icon-list-text">Услуга</span>
+                          </a>
+                        </li>
+                        <li class="elementor-icon-list-item">
+                          <a href="#">
+
+                            <span class="elementor-icon-list-text">Услуга</span>
+                          </a>
+                        </li>
+                        <li class="elementor-icon-list-item">
+                          <a href="#">
+
+                            <span class="elementor-icon-list-text">Услуга</span>
+                          </a>
+                        </li>
+                        <li class="elementor-icon-list-item">
+                          <a href="#">
+
+                            <span class="elementor-icon-list-text">Услуга</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-645cd84"
+                   data-id="645cd84" data-element_type="column">
+                <div class="elementor-widget-wrap elementor-element-populated">
+                  <div class="elementor-element elementor-element-281808d elementor-widget elementor-widget-heading"
+                       data-id="281808d" data-element_type="widget"
+                       data-widget_type="heading.default">
+                    <div class="elementor-widget-container">
+                      <h4 class="elementor-heading-title elementor-size-default">Компания</h4>
+                    </div>
+                  </div>
+                  <div class="elementor-element elementor-element-eddd446 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+                       data-id="eddd446" data-element_type="widget"
+                       data-widget_type="icon-list.default">
+                    <div class="elementor-widget-container">
+                      <ul class="elementor-icon-list-items">
+                        <li class="elementor-icon-list-item">
+                          <a href="index.html">
+                            <span class="elementor-icon-list-text">Главная</span>
+                          </a>
+                        </li>
+                        <li class="elementor-icon-list-item">
+                          <a href="about-us.html">
+
+                            <span class="elementor-icon-list-text">О компании</span>
+                          </a>
+                        </li>
+                        <li class="elementor-icon-list-item">
+                          <a href="direction.html">
+
+                            <span class="elementor-icon-list-text">Направления</span>
+                          </a>
+                        </li>
+                        <li class="elementor-icon-list-item">
+                          <a href="#">
+
+                            <span class="elementor-icon-list-text">Контакты</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-1c8587d"
+                   data-id="1c8587d" data-element_type="column">
+                <div class="elementor-widget-wrap elementor-element-populated">
+                  <div class="elementor-element elementor-element-b0612ad elementor-widget elementor-widget-heading"
+                       data-id="b0612ad" data-element_type="widget"
+                       data-widget_type="heading.default">
+                    <div class="elementor-widget-container">
+                      <h4 class="elementor-heading-title elementor-size-default">Заявка на
+                        обратный звонок</h4>
+                    </div>
+                  </div>
+                  <div class="elementor-element elementor-element-16a8ab3 elementor-widget elementor-widget-heading"
+                       data-id="16a8ab3" data-element_type="widget"
+                       data-widget_type="heading.default">
+                    <div class="elementor-widget-container">
+                      <div class="elementor-heading-title elementor-size-default">Оставьте свой
+                        телефон и мы перезвоним вам
+                      </div>
+                    </div>
+                    <div class="elementor-element elementor-element-982c32f elementor-button-align-stretch elementor-widget elementor-widget-form"
+                         data-id="982c32f" data-element_type="widget"
+                         data-settings="{&quot;button_width&quot;:&quot;33&quot;,&quot;button_width_tablet&quot;:&quot;33&quot;,&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}"
+                         data-widget_type="form.default">
+                      <div class="elementor-widget-container">
+                        <form class="elementor-form" method="post" name="New Form">
+
+
+                          <div class="elementor-form-fields-wrapper  elementor-labels-">
+                            <div class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-email elementor-col-66 elementor-md-66 elementor-field-required">
+                              <label for="form-field-email"
+                                     class="elementor-field-label elementor-screen-only">
+                                Номер телефона </label>
+                              <input size="1" type="email" name="form_fields[email]"
+                                     id="form-field-email"
+                                     class="elementor-field elementor-size-md elementor-field-textual"
+                                     placeholder="Номер телефона" required="required"
+                                     aria-required="true">
+                            </div>
+                            <div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-33 e-form__buttons elementor-md-33">
+                              <button type="submit"
+                                      class="elementor-button elementor-size-md">
+						<span>
+															<span class="elementor-align-icon-left elementor-button-icon">	                                                            </span>
+																						<span class="elementor-button-text">Отправить</span>
+													</span>
+                              </button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<link rel='stylesheet' id='e-animations-css'
+      href='css/flatpickr.min.css'
+      type='text/css' media='all'/>
+
+<link rel='stylesheet' id='e-animations-css'
+      href='css/animations.min.css'
+      type='text/css' media='all'/>
+
+
+<script type='text/javascript'
+        src='js/jquery/jquery.smartmenus.min.js'
+        id='smartmenus-js'></script>
+
+<script type='text/javascript'
+        src='js/flatpickr.min.js'
+        id='flatpickr-js'></script>
+<script type='text/javascript'
+        src='js/jquery/jquery-numerator.min.js'
+        id='jquery-numerator-js'></script>
+<script type='text/javascript' src='js/imagesloaded.min.js'
+        id='imagesloaded-js'></script>
+<script type='text/javascript'
+        src='js/webpack.runtime.min.js'
+        id='elementor-webpack-runtime-js'></script>
+<script type='text/javascript'
+        src='js/frontend-modules.min.js'
+        id='elementor-frontend-modules-js'></script>
+<script type='text/javascript'
+        src='https://show.moxcreative.com/autorent/wp-content/plugins/elementor/assets/js/frontend.min.js'
+        id='elementor-frontend-js'></script>
+<script type='text/javascript'
+        src='https://show.moxcreative.com/autorent/wp-includes/js/dist/hooks.min.js?ver=c6d64f2cb8f5c6bb49caca37f8828ce3'
+        id='wp-hooks-js'></script>
+<script type='text/javascript'
+        src='https://show.moxcreative.com/autorent/wp-includes/js/dist/i18n.min.js?ver=ebee46757c6a411e38fd079a7ac71d94'
+        id='wp-i18n-js'></script>
+
+<script type='text/javascript'
+        src='https://show.moxcreative.com/autorent/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.7.4'
+        id='elementor-pro-webpack-runtime-js'></script>
+<script type='text/javascript' id='elementor-pro-frontend-js-before'>
+  var ElementorProFrontendConfig = {
+    "ajaxurl": "https:\/\/show.moxcreative.com\/autorent\/wp-admin\/admin-ajax.php",
+    "nonce": "cc31380e63",
+    "urls": {
+      "assets": "https:\/\/show.moxcreative.com\/autorent\/wp-content\/plugins\/elementor-pro\/assets\/",
+      "rest": "https:\/\/show.moxcreative.com\/autorent\/wp-json\/"
+    },
+    "shareButtonsNetworks": {
+      "facebook": {"title": "Facebook", "has_counter": true},
+      "twitter": {"title": "Twitter"},
+      "linkedin": {"title": "LinkedIn", "has_counter": true},
+      "pinterest": {"title": "Pinterest", "has_counter": true},
+      "reddit": {"title": "Reddit", "has_counter": true},
+      "vk": {"title": "VK", "has_counter": true},
+      "odnoklassniki": {"title": "OK", "has_counter": true},
+      "tumblr": {"title": "Tumblr"},
+      "digg": {"title": "Digg"},
+      "skype": {"title": "Skype"},
+      "stumbleupon": {"title": "StumbleUpon", "has_counter": true},
+      "mix": {"title": "Mix"},
+      "telegram": {"title": "Telegram"},
+      "pocket": {"title": "Pocket", "has_counter": true},
+      "xing": {"title": "XING", "has_counter": true},
+      "whatsapp": {"title": "WhatsApp"},
+      "email": {"title": "Email"},
+      "print": {"title": "Print"}
+    },
+    "facebook_sdk": {"lang": "en_US", "app_id": ""},
+    "lottie": {"defaultAnimationUrl": "https:\/\/show.moxcreative.com\/autorent\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}
+  };
+</script>
+<script type='text/javascript'
+        src='https://show.moxcreative.com/autorent/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.7.4'
+        id='elementor-pro-frontend-js'></script>
+<script type='text/javascript'
+        src='https://show.moxcreative.com/autorent/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.7.4'
+        id='pro-elements-handlers-js'></script>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
+</title>
+</head>
+<body>
+
+</body>
+</html>

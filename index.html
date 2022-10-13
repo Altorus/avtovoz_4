@@ -40,8 +40,31 @@
           type='text/css' media='all'/>
     <script src="https://kit.fontawesome.com/68a7244d01.js" crossorigin="anonymous"></script>
     <script type='text/javascript' src='js/jquery/jquery.min.js' id='jquery-core-js'></script>
+    <!-- Пакет JavaScript с Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            crossorigin="anonymous"></script>
 </head>
 <body class="envato_tk_templates-template envato_tk_templates-template-elementor_header_footer single single-envato_tk_templates postid-800 qodef-qi--no-touch qi-addons-for-elementor-1.5.4 elementor-default elementor-template-full-width elementor-kit-22 elementor-page elementor-page-800">
+
+<!-- Модальное окно -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+     aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Заголовок модального окна</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                <button type="button" class="btn btn-primary">Понял</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
      style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
@@ -246,7 +269,7 @@
                     <div class="elementor-element elementor-element-c78c334 elementor-widget elementor-widget-image"
                          data-id="c78c334" data-element_type="widget" data-widget_type="image.default">
                         <div class="elementor-widget-container">
-                            <a href="https://show.moxcreative.com/autorent">
+                            <a href="index.html">
                                 <img src="https://show.moxcreative.com/autorent/wp-content/uploads/sites/58/elementor/thumbs/logo_autorent-pk55phs6ikwyzbaa4d3tpv6zacoysdm1xu32ptrwu8.png"
                                      title="logo_autorent" alt="logo_autorent"/> </a>
                         </div>
@@ -281,16 +304,19 @@
                                             href="contact-us.html"
                                             class="elementor-item">Контакты</a></li>
                                     <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-20">
-                                        <a href="#" class="elementor-item elementor-item-anchor">Услуги</a>
+                                        <a href="file_text.html" class="elementor-item elementor-item-anchor">Услуги</a>
                                         <ul class="sub-menu elementor-nav-menu--dropdown">
                                             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19">
-                                                <a href="#"
+                                                <a href="file_text.html"
                                                    class="elementor-sub-item">Заказ автовоза</a></li>
                                             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18">
-                                                <a href="#"
+                                                <a href="file_text.html"
                                                    class="elementor-sub-item">Оформление документов</a></li>
                                         </ul>
                                     </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14"><a
+                                            href="reviews.html"
+                                            class="elementor-item">Отзывы</a></li>
                                 </ul>
                             </nav>
                             <div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle"
@@ -312,25 +338,28 @@
                                             href="about-us.html"
                                             class="elementor-item" tabindex="-1">О компании</a></li>
                                     <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11">
-                                        <a href="https://show.moxcreative.com/autorent/template-kit/listing-car/"
+                                        <a href="direction.html"
                                            class="elementor-item" tabindex="-1">Направления</a>
                                     </li>
                                     <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14"><a
-                                            href="https://show.moxcreative.com/autorent/template-kit/contact-us/"
+                                            href="contact-us.html"
                                             class="elementor-item" tabindex="-1">Контакты</a></li>
                                     <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-20">
-                                        <a href="#" class="elementor-item elementor-item-anchor"
+                                        <a href="file_text.html" class="elementor-item elementor-item-anchor"
                                            tabindex="-1">Услуги</a>
                                         <ul class="sub-menu elementor-nav-menu--dropdown">
                                             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19">
-                                                <a href="https://show.moxcreative.com/autorent/template-kit/services/"
+                                                <a href="file_text.html"
                                                    class="elementor-sub-item" tabindex="-1">Заказать автовоз</a></li>
                                             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18">
-                                                <a href="https://show.moxcreative.com/autorent/template-kit/pricing-plan/"
+                                                <a href="file_text.html"
                                                    class="elementor-sub-item" tabindex="-1">Оформление документов</a>
                                             </li>
                                         </ul>
                                     </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14"><a
+                                            href="reviews.html"
+                                            class="elementor-item" tabindex="-1">Отзывы</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -347,10 +376,9 @@
                                 <a href="#" class="elementor-button-link elementor-button elementor-size-md"
                                    role="button">
 						<span class="elementor-button-content-wrapper">
-							<span class="elementor-button-icon elementor-align-icon-left">
-				<i aria-hidden="true" class="material-icons md-directions_car" data-md-icon="directions_car"></i>			</span>
-						<span class="elementor-button-text">Оформить заявку</span>
-		</span>
+							<span class="elementor-button-icon elementor-align-icon-left"></span>
+						    <span class="elementor-button-text" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Оформить заявку</span>
+                        </span>
                                 </a>
                             </div>
                         </div>
@@ -1971,14 +1999,6 @@
                             <div class="elementor-posts-container elementor-posts elementor-posts--skin-classic elementor-grid">
                                 <article
                                         class="elementor-post elementor-grid-item post-60 post type-post status-publish format-standard has-post-thumbnail hentry category-car-rent">
-                                    <a class="elementor-post__thumbnail__link"
-                                       href="https://show.moxcreative.com/autorent/2022/02/07/renting-a-car-with-a-debit-card-is-not-a-dream/">
-                                        <div class="elementor-post__thumbnail"><img width="1080" height="720"
-                                                                                    src="https://show.moxcreative.com/autorent/wp-content/uploads/sites/58/2022/02/car-rent-agent-manager-holding-key-of-new-car-giving-to-woman-client-after-signing-good-deal.jpg"
-                                                                                    class="attachment-full size-full"
-                                                                                    alt="Car rent agent manager holding key of new car giving to woman client after signing good deal"
-                                                                                    loading="lazy"/></div>
-                                    </a>
                                     <div class="elementor-post__text">
                                         <h3 class="elementor-post__title">
                                             <a href="https://show.moxcreative.com/autorent/2022/02/07/renting-a-car-with-a-debit-card-is-not-a-dream/">
@@ -1998,14 +2018,6 @@
                                 </article>
                                 <article
                                         class="elementor-post elementor-grid-item post-61 post type-post status-publish format-standard has-post-thumbnail hentry category-car-rent">
-                                    <a class="elementor-post__thumbnail__link"
-                                       href="https://show.moxcreative.com/autorent/2022/02/07/car-rental-shortage-and-how-to-avoid-it/">
-                                        <div class="elementor-post__thumbnail"><img width="1080" height="791"
-                                                                                    src="https://show.moxcreative.com/autorent/wp-content/uploads/sites/58/2022/02/rent-a-car-counter-at-the-airport-.jpg"
-                                                                                    class="attachment-full size-full"
-                                                                                    alt="Rent a car counter at the airport."
-                                                                                    loading="lazy"/></div>
-                                    </a>
                                     <div class="elementor-post__text">
                                         <h3 class="elementor-post__title">
                                             <a href="https://show.moxcreative.com/autorent/2022/02/07/car-rental-shortage-and-how-to-avoid-it/">
@@ -2146,9 +2158,13 @@
                                                     </a>
                                                 </li>
                                                 <li class="elementor-icon-list-item">
-                                                    <a href="#">
-
+                                                    <a href="contact-us.html">
                                                         <span class="elementor-icon-list-text">Контакты</span>
+                                                    </a>
+                                                </li>
+                                                <li class="elementor-icon-list-item">
+                                                    <a href="reviews.html">
+                                                        <span class="elementor-icon-list-text">Отзывы</span>
                                                     </a>
                                                 </li>
                                             </ul>
@@ -2245,17 +2261,11 @@
         src='js/frontend-modules.min.js'
         id='elementor-frontend-modules-js'></script>
 <script type='text/javascript'
-        src='https://show.moxcreative.com/autorent/wp-content/plugins/elementor/assets/js/frontend.min.js'
+        src='js/frontend.min.js'
         id='elementor-frontend-js'></script>
-<script type='text/javascript'
-        src='https://show.moxcreative.com/autorent/wp-includes/js/dist/hooks.min.js?ver=c6d64f2cb8f5c6bb49caca37f8828ce3'
-        id='wp-hooks-js'></script>
-<script type='text/javascript'
-        src='https://show.moxcreative.com/autorent/wp-includes/js/dist/i18n.min.js?ver=ebee46757c6a411e38fd079a7ac71d94'
-        id='wp-i18n-js'></script>
 
 <script type='text/javascript'
-        src='https://show.moxcreative.com/autorent/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.7.4'
+        src='js/webpack-pro.runtime.min.js'
         id='elementor-pro-webpack-runtime-js'></script>
 <script type='text/javascript' id='elementor-pro-frontend-js-before'>
     var ElementorProFrontendConfig = {
@@ -2290,10 +2300,10 @@
     };
 </script>
 <script type='text/javascript'
-        src='https://show.moxcreative.com/autorent/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.7.4'
+        src='js/frontend2.min.js'
         id='elementor-pro-frontend-js'></script>
 <script type='text/javascript'
-        src='https://show.moxcreative.com/autorent/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.7.4'
+        src='js/elements-handlers.min.js'
         id='pro-elements-handlers-js'></script>
 
 <script src="js/main.js"></script>

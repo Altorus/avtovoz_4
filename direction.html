@@ -1,13 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title><!doctype html>
-        <html lang="ru">
-        <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Автовоз 4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Автовоз 4</title>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <link rel="stylesheet" href="dist/css/bootstrap.css">
     <script src="js/script.js"></script>
@@ -46,6 +42,26 @@
     <script type='text/javascript' src='js/jquery/jquery.min.js' id='jquery-core-js'></script>
 </head>
 <body class="envato_tk_templates-template envato_tk_templates-template-elementor_header_footer single single-envato_tk_templates postid-800 qodef-qi--no-touch qi-addons-for-elementor-1.5.4 elementor-default elementor-template-full-width elementor-kit-22 elementor-page elementor-page-800">
+
+<!-- Модальное окно -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+     aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Заголовок модального окна</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                <button type="button" class="btn btn-primary">Понял</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
      style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
@@ -352,8 +368,8 @@
                                    role="button">
 						<span class="elementor-button-content-wrapper">
 							<span class="elementor-button-icon elementor-align-icon-left">
-				<i aria-hidden="true" class="material-icons md-directions_car" data-md-icon="directions_car"></i>			</span>
-						<span class="elementor-button-text">Оформить заявку</span>
+							</span>
+						<span class="elementor-button-text" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Оформить заявку</span>
 		</span>
                                 </a>
                             </div>
@@ -477,7 +493,8 @@
         </form>
     </div>
 </div>
-<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Acf33051c02ec1b0d998d7695c1d133d6248cc6d7953219ad297d93c77810c309&amp;source=constructor" width="100%" height="400" frameborder="0" class="mt-3"></iframe>
+<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Acf33051c02ec1b0d998d7695c1d133d6248cc6d7953219ad297d93c77810c309&amp;source=constructor"
+        width="100%" height="400" frameborder="0" class="mt-3"></iframe>
 <div class="container">
 
     <section
@@ -757,8 +774,12 @@
         </div>
     </section>
     <div class="row">
-        <p>Цена перевозки на автовозе индивидуальна, на нее влияют: габариты автомобиля, состояние, стоимость, направление и расстояние перевозки. Перевозка одного и того же авто на одинаковое расстояние будет отличаться по цене в зависимости от направления движения автовоза. Мы рекомендуем уточнить цену транспортировки автомобиля на автовозе у наших менеджеров, позвонив по телефону или заполнив заявку.</p>
-        <p>Наша компания “Автовоз РФ” осуществляет <a href="index.html">перевозки автомобилей по России</a>, обеспечивая:</p>
+        <p>Цена перевозки на автовозе индивидуальна, на нее влияют: габариты автомобиля, состояние, стоимость,
+            направление и расстояние перевозки. Перевозка одного и того же авто на одинаковое расстояние будет
+            отличаться по цене в зависимости от направления движения автовоза. Мы рекомендуем уточнить цену
+            транспортировки автомобиля на автовозе у наших менеджеров, позвонив по телефону или заполнив заявку.</p>
+        <p>Наша компания “Автовоз РФ” осуществляет <a href="index.html">перевозки автомобилей по России</a>,
+            обеспечивая:</p>
         <ul>
             <li>безопасную транспортировку автомобилей;</li>
             <li>доступную цены на услуги автовозов;</li>
@@ -768,9 +789,11 @@
             <li>контроль за передвижением автовозов через систему Глонасс.</li>
         </ul>
         <div class="h2 mt-2">Услуга перевозки автомобилей по России</div>
-        <p>Чтобы забронировать перевозку авто в другой город России, позвоните нам по бесплатной горячей линии 8 (800) 444-75-73 или оставьте заявку на сайте.</p>
+        <p>Чтобы забронировать перевозку авто в другой город России, позвоните нам по бесплатной горячей линии 8 (800)
+            444-75-73 или оставьте заявку на сайте.</p>
         <p>
-            Наш менеджер озвучит Вам цену транспортировки машины по нужному маршруту, все условия перевозки и ближайшую дату, когда можно будет отправить машину на автовозе из Вашего города.
+            Наш менеджер озвучит Вам цену транспортировки машины по нужному маршруту, все условия перевозки и ближайшую
+            дату, когда можно будет отправить машину на автовозе из Вашего города.
         </p>
         <p>
             После заключения договора, Вам необходимо будет:
@@ -779,12 +802,19 @@
             <li>Доставить транспортное средство на стоянку по указанному адресу;</li>
             <li>Получить акт осмотра и передачи транспортного средства от нашего сотрудника;</li>
             <li>Внести половину оплаты стоимости за услугу перевозки автомобиля;</li>
-            <li>Как только Ваша машина будет доставлен в город назначения, Вас уведомят и сообщат адрес, где можно будет забрать автомобиль.</li>
-            <li>Приезжаете за машиной, осматриваете её и оплачиваете вторую половину за услуги транспортировки. После этого Вы или Ваше доверенное лицо можете забрать транспортное средство</li>
+            <li>Как только Ваша машина будет доставлен в город назначения, Вас уведомят и сообщат адрес, где можно будет
+                забрать автомобиль.
+            </li>
+            <li>Приезжаете за машиной, осматриваете её и оплачиваете вторую половину за услуги транспортировки. После
+                этого Вы или Ваше доверенное лицо можете забрать транспортное средство
+            </li>
         </ol>
-        <p>Примерную стоимость услуг перевозки машины автовозом можно рассчитать через онлайн калькулятор выше. Цена будет зависеть от расстояния и габаритов автомобиля.</p>
-        <p>На наших автовозах Вы сможете перегнать машину практически в любой крупный город России и ближнего зарубежья.</p>
-        <p>Узнать сколько стоит перевезти машину в другой город и по другим вопросам обращайтесь к нашим менеджерам по телефону 8 (800) 444-75-73, мы всегда готовы Вам помочь перевезти авто по нужному маршруту.</p>
+        <p>Примерную стоимость услуг перевозки машины автовозом можно рассчитать через онлайн калькулятор выше. Цена
+            будет зависеть от расстояния и габаритов автомобиля.</p>
+        <p>На наших автовозах Вы сможете перегнать машину практически в любой крупный город России и ближнего
+            зарубежья.</p>
+        <p>Узнать сколько стоит перевезти машину в другой город и по другим вопросам обращайтесь к нашим менеджерам по
+            телефону 8 (800) 444-75-73, мы всегда готовы Вам помочь перевезти авто по нужному маршруту.</p>
 
         <div class="h2 mt-2">Все направления</div>
         <table class="table">
